@@ -41,7 +41,7 @@
 The best layout for this architecture is a Monorepo structured with npm/pnpm workspaces.
 Because you are using Vercel for the frontend and a traditional server framework (Express.js) for the backend, keeping them in isolated directories ensures Vercel doesn't fail trying to build your Express server, and your Express server doesn't get bloated with Next.js code.
 ## The Ultimate Monorepo Structure
-
+```
 my-project/
 ├── .github/                     # CI/CD workflows
 ├── apps/                        # Deployable applications
@@ -73,7 +73,7 @@ my-project/
 │
 ├── package.json                 # Root package.json defining workspaces
 └── pnpm-workspace.yaml          # Workspace config (if using pnpm)
-
+```
 ------------------------------
 ## 🛠️ Handling the Moving Parts## 1. Google App Script (The Middleware)
 Google App Script runs on Google's cloud servers, not locally.
